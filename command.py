@@ -10,7 +10,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.ext import Updater
 from html import escape
 
-updater = Updater(token='BOT_TOKEN')
+updater = Updater(token='1427913240:AAGGecSGpgtrur2iUUTQnRpLP3Ch2874YSM')
 dispatcher = updater.dispatcher
 
 import logging
@@ -42,7 +42,7 @@ def tip(bot,update):
 	if user is None:
 		bot.send_message(chat_id=update.message.chat_id, text="Please set a telegram username in your profile settings!")
 	else:
-		machine = "@Reddcoin_bot"
+		machine = "@Botcreatordevtipbot"
 		if target == machine:
 			bot.send_message(chat_id=update.message.chat_id, text="HODL.")
 		elif "@" in target:
